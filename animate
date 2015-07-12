@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+
+import argparse
+
+import animate as anim
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='Creates videos from text grid directories.')
+    parser.add_argument('-v', dest='verbose', action='store_true',
+        help='run the script with updates')
+    parser.add_argument('--fps', type=int, choices=[24,25], default=25,
+        help='frames per second') 
+    parser.add_argument('--stills', action='store_true',
+        help='keep composite frames')
+    parser.add_argument('dir', metavar='DIR',
+        help='directory with source files')
+    args = parser.parse_args()
+    anim.animate(args)
+
+
+if __name__ == '__main__':
+    main()

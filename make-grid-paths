@@ -1,0 +1,48 @@
+#!/usr/bin/env python
+
+import argparse
+import os
+
+import gridpaths
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='''Creates all possible paths in a discrete grid using a
+            collection of images for each position.''')
+    parser.add_argument('-r', '--rows',
+            type=int, choices=range(1, 10), default=3,
+            help='rows in the grid')
+    parser.add_argument('-c', '--cols',
+            type=int, choices=range(1, 10), default=5,
+            help='columns in the grid')
+    parser.add_argument('-o', '--out-dir', type=str,
+            help='path to a directory to write path directories to')
+    parser.add_argument('in_dir',
+            help='path to directory of input images')
+    args = parser.parse_args()
+
+    if not args.out_dir:
+        args.out_dir = args.in_dir
+
+    for path in gridpaths.all_paths(int(args.rows), int(args.cols)):
+        p1, p2 = path[0], path[-1]
+        path_dir = "%d%d-%d%d" % (p1.i, p1.j, p2.i, p2.j)
+        out_dir = os.path.join(args.out_dir, path_dir)
+        os.makedirs(out_dir)
+        copy_path_to_dir(path, args.in_dir, out_dir)
+
+
+def copy_path_to_dir(path, in_dir, out_dir):
+    n = 1
+    for p in path:
+        img_file = "%d%d.png" % (p.i, p.j)
+        img_path = os.path.join(in_dir, img_file)
+        out_path = os.path.join(out_dir, "%d.png" % n)
+        rel_path = os.path.relpath(img_path, out_dir)
+        os.symlink(rel_path, out_path)
+        n += 1
+
+
+if __name__ == '__main__':
+    main()
