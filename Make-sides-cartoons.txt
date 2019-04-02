@@ -1,0 +1,53 @@
+# Left
+gm composite -geometry -100+500 1.png Tz-BG.png b1.png
+gm composite -geometry -100+500 2.png Tz-BG.png b2.png
+gm composite -geometry -100+500 3.png Tz-BG.png b3.png
+gm composite -geometry -100+500 4.png Tz-BG.png b4.png
+gm composite -geometry -100+500 5.png Tz-BG.png b5.png
+gm composite -geometry -100+500 6.png Tz-BG.png b6.png
+gm composite -geometry -100+500 7.png Tz-BG.png b7.png
+
+gm composite -geometry -100+500 11.png Tz-BG.png b11.png
+gm composite -geometry -100+500 12.png Tz-BG.png b12.png
+gm composite -geometry -100+500 13.png Tz-BG.png b13.png
+gm composite -geometry -100+500 14.png Tz-BG.png b14.png
+gm composite -geometry -100+500 15.png Tz-BG.png b15.png
+gm composite -geometry -100+500 21.png Tz-BG.png b21.png
+gm composite -geometry -100+500 22.png Tz-BG.png b22.png
+gm composite -geometry -100+500 23.png Tz-BG.png b23.png
+gm composite -geometry -100+500 24.png Tz-BG.png b24.png
+gm composite -geometry -100+500 25.png Tz-BG.png b25.png
+gm composite -geometry -100+500 31.png Tz-BG.png b31.png
+gm composite -geometry -100+500 32.png Tz-BG.png b32.png
+gm composite -geometry -100+500 33.png Tz-BG.png b33.png
+gm composite -geometry -100+500 34.png Tz-BG.png b34.png
+gm composite -geometry -100+500 35.png Tz-BG.png b35.png
+
+
+
+# Right
+gm composite -geometry +1500+500 1.png Tz-BG.png b1.png
+gm composite -geometry +1500+500 2.png Tz-BG.png b2.png
+gm composite -geometry +1500+500 3.png Tz-BG.png b3.png
+gm composite -geometry +1500+500 4.png Tz-BG.png b4.png
+gm composite -geometry +1500+500 5.png Tz-BG.png b5.png
+gm composite -geometry +1500+500 6.png Tz-BG.png b6.png
+gm composite -geometry +1500+500 7.png Tz-BG.png b7.png
+
+gm composite -geometry +1500+500 11.png Tz-BG.png b11.png
+gm composite -geometry +1500+500 12.png Tz-BG.png b12.png
+gm composite -geometry +1500+500 13.png Tz-BG.png b13.png
+gm composite -geometry +1500+500 14.png Tz-BG.png b14.png
+gm composite -geometry +1500+500 15.png Tz-BG.png b15.png
+gm composite -geometry +1500+500 21.png Tz-BG.png b21.png
+gm composite -geometry +1500+500 22.png Tz-BG.png b22.png
+gm composite -geometry +1500+500 23.png Tz-BG.png b23.png
+gm composite -geometry +1500+500 24.png Tz-BG.png b24.png
+gm composite -geometry +1500+500 25.png Tz-BG.png b25.png
+gm composite -geometry +1500+500 31.png Tz-BG.png b31.png
+gm composite -geometry +1500+500 32.png Tz-BG.png b32.png
+gm composite -geometry +1500+500 33.png Tz-BG.png b33.png
+gm composite -geometry +1500+500 34.png Tz-BG.png b34.png
+gm composite -geometry +1500+500 35.png Tz-BG.png b35.png
+
+
